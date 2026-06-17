@@ -6,7 +6,7 @@ const TEAM = [
     role: 'Violin / Founder',
     img: '/team/krushal.jpg',
     imgPos: '50% 30%',
-    bio: 'Krushal is a senior at The Woodlands College Park High School and has played the violin for seven years. He founded Resonance Ensemble to bring live music to assisted living and rehabilitation communities and is interested in neuroscience, medicine, and the ways music can support cognitive and emotional well-being.',
+    bio: 'Krushal is a senior at The Woodlands College Park High School and has played the violin for nine years. He founded Resonance Ensemble to bring live music to assisted living and rehabilitation communities and is interested in neuroscience, medicine, and the ways music can support cognitive and emotional well-being.',
   },
   {
     name: 'Andy',
