@@ -1,10 +1,10 @@
 import { Camera } from 'lucide-react'
 
 const HEALING_STATS = [
-  { value: '$3,000+', label: 'Raised'                  },
-  { value: '150',     label: 'Wellness Kits Delivered' },
-  { value: '21',      label: 'Performers'              },
-  { value: '250+',    label: 'Attendees'               },
+  { value: '$14,000+', label: 'Raised'                  },
+  { value: '450+',     label: 'Wellness Kits Delivered' },
+  { value: '35+',      label: 'Performers'              },
+  { value: '300+',     label: 'Attendees'               },
 ]
 
 
@@ -34,21 +34,21 @@ export default function CommunityProjects() {
               <span className="text-gold font-semibold text-xs tracking-widest uppercase">
                 Featured Project
               </span>
-              <h2 className="text-3xl sm:text-4xl font-serif text-charcoal mt-2 mb-8">
+              <h2 className="text-3xl sm:text-4xl font-serif text-charcoal mt-2 mb-3">
                 Healing in Harmony
               </h2>
+              <p className="text-primary text-sm font-semibold tracking-wide mb-6">Annual Event · 2025 &amp; 2026</p>
               <p className="text-charcoal-muted leading-relaxed mb-4">
-                Healing in Harmony was a community fundraising and performance event
-                organized in partnership with Heroes for Children, bringing together musicians,
-                volunteers, and community members to raise funds and assemble wellness kits for
-                pediatric cancer patients and their families.
+                Healing in Harmony is our flagship annual fundraising and performance event,
+                organized in partnership with Heroes for Children. Each year it brings together
+                musicians, volunteers, and community members to raise funds and assemble wellness
+                kits for pediatric cancer patients and their families.
               </p>
               <p className="text-charcoal-muted leading-relaxed">
-                The event featured live performances from 21 musicians, hands-on
-                kit-building stations, and educational programming about the role of music in
-                therapeutic settings. The outpouring of community support exceeded all expectations,
-                with over 250 attendees joining us for an afternoon of music, generosity, and
-                connection.
+                Now in its second year, the event has grown into a beloved Houston tradition —
+                featuring live performances, hands-on kit-building stations, and programming that
+                celebrates the role of music in healing. The combined impact across both concerts
+                speaks to the extraordinary generosity of our community.
               </p>
             </div>
 
@@ -72,7 +72,8 @@ export default function CommunityProjects() {
 
               {/* Event Impact card */}
               <div className="bg-primary/5 rounded-2xl p-8 border border-primary/10 flex-1">
-                <h3 className="font-serif text-xl text-charcoal mb-7">Event Impact</h3>
+                <h3 className="font-serif text-xl text-charcoal mb-1">Combined Impact</h3>
+                <p className="text-charcoal-muted text-xs mb-7">2025 &amp; 2026</p>
                 <div className="grid grid-cols-2 gap-x-8 gap-y-8">
                   {HEALING_STATS.map(({ value, label }) => (
                     <div key={label}>
@@ -86,28 +87,49 @@ export default function CommunityProjects() {
             </div>
           </div>
 
-          {/* Project Photo Gallery */}
-          <div>
-            <h3 className="font-serif text-xl text-charcoal mb-6">Event Gallery</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { src: '/projects/healing-in-harmony/photo-1.png', alt: 'Quartet performing on stage at Healing in Harmony' },
-                { src: '/projects/healing-in-harmony/photo-2.png', alt: 'Full ensemble performing at Healing in Harmony' },
-                { src: '/projects/healing-in-harmony/photo-3.png', alt: 'Audience gathered at Healing in Harmony event' },
-                { src: '/projects/healing-in-harmony/photo-4.png', alt: 'Violin and clarinet duo performing at Healing in Harmony' },
-              ].map(({ src, alt }) => (
-                <div
-                  key={src}
-                  className="aspect-square rounded-xl overflow-hidden bg-cream-dark shadow-sm"
-                >
-                  <img
-                    src={src}
-                    alt={alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              ))}
+          {/* Photo Galleries */}
+          <div className="space-y-10">
+
+            {/* 2025 Gallery */}
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <h3 className="font-serif text-xl text-charcoal">Event Gallery</h3>
+                <span className="text-xs font-semibold tracking-widest uppercase text-gold border border-gold/30 rounded-full px-3 py-0.5">2025</span>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[
+                  { src: '/projects/healing-in-harmony/photo-1.png', alt: 'Quartet performing on stage at Healing in Harmony 2025' },
+                  { src: '/projects/healing-in-harmony/photo-2.png', alt: 'Full ensemble performing at Healing in Harmony 2025' },
+                  { src: '/projects/healing-in-harmony/photo-3.png', alt: 'Audience gathered at Healing in Harmony 2025' },
+                  { src: '/projects/healing-in-harmony/photo-4.png', alt: 'Violin and clarinet duo performing at Healing in Harmony 2025' },
+                ].map(({ src, alt }) => (
+                  <div key={src} className="aspect-square rounded-xl overflow-hidden bg-cream-dark shadow-sm">
+                    <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  </div>
+                ))}
+              </div>
             </div>
+
+            {/* 2026 Gallery */}
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <h3 className="font-serif text-xl text-charcoal">Event Gallery</h3>
+                <span className="text-xs font-semibold tracking-widest uppercase text-primary border border-primary/30 rounded-full px-3 py-0.5">2026</span>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[
+                  { src: '/projects2/DSC_1992.JPG', alt: 'Healing in Harmony 2026 performance' },
+                  { src: '/projects2/DSC_2021.JPG', alt: 'Healing in Harmony 2026 ensemble' },
+                  { src: '/projects2/DSC_2062.JPG', alt: 'Healing in Harmony 2026 community' },
+                  { src: '/projects2/IMG_5809.JPG', alt: 'Healing in Harmony 2026 event' },
+                ].map(({ src, alt }) => (
+                  <div key={src} className="aspect-square rounded-xl overflow-hidden bg-cream-dark shadow-sm">
+                    <img src={src} alt={alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
